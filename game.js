@@ -910,7 +910,7 @@ Game = {
 
   FSM: {
     boot: function () {
-      Game.spawnAsteroids(5);
+      Game.spawnAsteroids(8);
       this.state = 'waiting';
     },
     waiting: function () {
@@ -932,7 +932,7 @@ Game = {
       }
 
       Game.score = 0;
-      Game.lives = 2;
+      Game.lives = 3;
       Game.totalAsteroids = 2;
       Game.spawnAsteroids();
 
